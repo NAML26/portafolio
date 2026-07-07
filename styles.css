@@ -294,9 +294,16 @@ h3 {
   margin-bottom: 0;
 }
 
+.task-actions {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  align-items: center;
+}
+
 .task-link {
   width: fit-content;
-  margin-top: auto;
   color: var(--text);
   font-weight: 600;
   border-bottom: 1px solid rgba(180, 106, 85, 0.55);
