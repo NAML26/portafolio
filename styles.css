@@ -159,9 +159,19 @@ h1 {
   margin-bottom: 1.25rem;
 }
 
+.hero-title {
+  max-width: none;
+  margin-bottom: 0.75rem;
+}
+
 h2 {
   font-size: clamp(1.8rem, 3vw, 2.6rem);
   margin: 0;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.35rem, 2.5vw, 1.9rem);
+  margin-bottom: 1.25rem;
 }
 
 h3 {
@@ -257,6 +267,10 @@ h3 {
   align-items: center;
 }
 
+.task-copy {
+  margin-bottom: 0;
+}
+
 .task-link {
   width: fit-content;
   margin-top: auto;
@@ -269,6 +283,17 @@ h3 {
 .task-link:hover {
   color: #ffffff;
   border-bottom-color: var(--accent);
+}
+
+.task-status {
+  margin-top: auto;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(242, 239, 232, 0.14);
+  background: rgba(242, 239, 232, 0.06);
+  color: var(--muted);
+  font-family: "Inter", "Segoe UI", sans-serif;
+  font-weight: 600;
 }
 
 .site-footer {
