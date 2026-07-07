@@ -302,17 +302,28 @@ h3 {
   align-items: center;
 }
 
+.task-card > .task-link {
+  margin-top: auto;
+}
+
 .task-link {
-  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 11rem;
+  padding: 0.8rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid rgba(242, 239, 232, 0.18);
+  background: transparent;
   color: var(--text);
+  font-family: "Inter", "Segoe UI", sans-serif;
   font-weight: 600;
-  border-bottom: 1px solid rgba(180, 106, 85, 0.55);
-  padding-bottom: 0.15rem;
+  text-decoration: none;
 }
 
 .task-link:hover {
-  color: #ffffff;
-  border-bottom-color: var(--accent);
+  color: var(--text);
+  background: rgba(242, 239, 232, 0.05);
 }
 
 .task-status {
