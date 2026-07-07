@@ -54,7 +54,7 @@ a:hover {
   justify-content: space-between;
   gap: 1rem;
   min-height: 4.5rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .brand-mark {
@@ -63,6 +63,8 @@ a:hover {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text);
+  flex: 0 0 auto;
+  margin-right: auto;
 }
 
 .brand-mark:hover,
@@ -77,16 +79,29 @@ a:hover {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+.site-nav .navbar-nav,
 .site-nav__links {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   gap: 0.5rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   list-style: none;
   margin: 0;
   padding: 0;
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.site-nav__links::-webkit-scrollbar {
+  display: none;
+}
+
+.site-nav__links .nav-item {
+  flex: 0 0 auto;
 }
 
 .site-nav__links .nav-link {
@@ -319,19 +334,20 @@ h3 {
 
 @media (max-width: 991.98px) {
   .nav-shell {
-    justify-content: center;
+    justify-content: space-between;
     min-height: auto;
     padding-block: 0.85rem;
   }
 
   .site-nav__links {
-    justify-content: center;
+    justify-content: flex-end;
+    gap: 0.3rem;
   }
 
   .navbar .nav-link {
     display: inline-flex;
     width: fit-content;
-    padding-inline: 0.9rem;
+    padding-inline: 0.75rem;
   }
 
   .hero-panel {
